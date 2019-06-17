@@ -27,7 +27,7 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const sql = require("sqlite");
 const dateFormat = require('dateformat'); 
 const pretty = require('pretty-ms') 
-const prefix = 'a';
+const prefix = '$';
 var table = require('table').table
 var ti={}  
 ,spee={}
@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['ahelp','Type ahelp'];
+    var setGame = ['$help','Type $help'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -306,7 +306,7 @@ client.on('message', function(msg) {
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
 			      .addField('``My Prefix``' , `[ ! ]` , true)
 			      .addField('``My Language``' , `[ Java Script ]` , true)
-			      .setFooter('By | 3bker')
+			      .setFooter('By | 70oSsaM_')
     })
 }
 });
@@ -431,7 +431,7 @@ client.on('message', message => {
 client.on('message', message => {
 if (message.content.startsWith(prefix + 'tag')) {
     let args = message.content.split(" ").slice(1);
-if(!args[0]) return message.reply('مرجو كتابة نص الدي تريد');  
+if(!args[0]) return message.reply('مرجو كتابة نص الذي تريد');  
 
     figlet(args.join(" "), (err, data) => {
               message.channel.send("```" + data + "```")
