@@ -220,7 +220,7 @@ fs.writeFile("./creditsCode.json", JSON.stringify(credits), (err) => {
       credits: m + 0.5,
   }
   
-    if(message.content.startsWith(prefix + "credit" || prefix + "credits")) {
+    if(message.content.startsWith(prefix + "crederit" ||prefix  + "credeerits")) {
 message.channel.send(`**${message.author.username}, your :credit_card: balance is \`\`${userData.credits}\`\`.**`);
 }
 });
@@ -630,7 +630,7 @@ var w = 'MEMBER';
 }
 let embed = new Discord.RichEmbed()
 .setColor('RANDOM')
-.setTitle(`**INFO** ${z.username}`)
+.setTitle(`**INFO** ${$username}`)
 .addField('`Your Name`',`**<@` + `${z.id}` + `>**`, true)
 .addField('`ID`', "**"+ `${z.id}` +"**",true)
 .addField('`Status`','**'+y+'**' , true)
